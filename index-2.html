@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beauty by Kamaljit | Beauty Salon in Hornchurch</title>
+
+    <meta
+        name="description"
+        content="Beauty by Kamaljit offers professional beauty treatments including eyebrows, waxing, threading and facial treatments in Elm Park, Hornchurch."
+    >
+
+    <meta name="theme-color" content="#8b5368">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            color: #30272b;
+            background: #fffdfd;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================
+           VARIABLES
+        ========================= */
+
+        :root {
+            --wine: #874f66;
+            --wine-dark: #633849;
+            --rose: #b77c91;
+            --cream: #fbf6f7;
+            --soft: #f5ebef;
+            --dark: #30272b;
+            --muted: #76696e;
+            --white: #ffffff;
+            --gold: #b99658;
+            --border: #eadde2;
+        }
+
+
+        /* =========================
+           UTILITY
+        ========================= */
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 110px 0;
+        }
+
+        .section-heading {
+            max-width: 700px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+
+        .eyebrow {
+            color: var(--wine);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .section-heading h2 {
+            font-family: "Playfair Display", serif;
+            font-weight: 500;
+            font-size: clamp(38px, 5vw, 58px);
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================= */
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 52px;
+            padding: 0 28px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: 0.3s ease;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--wine);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--wine-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border-color: var(--wine);
+            color: var(--wine);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--wine);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--wine);
+        }
+
+        .btn-white:hover {
+            background: #f8e9ee;
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .topbar {
+            background: var(--dark);
+            color: white;
+            padding: 9px 0;
+            font-size: 12px;
+        }
+
+        .topbar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar a:hover {
+            color: #e7b9c9;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 253, 253, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav {
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            font-family: "Playfair Display", serif;
+            font-size: 26px;
+            color: var(--wine);
+            line-height: 1;
+        }
+
+        .brand small {
+            display: block;
+            font-family: "DM Sans", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 8px;
+            color: var(--muted);
+            margin-top: 6px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            font-weight: 600;
+            color: #493e42;
+            transition: 0.25s;
+        }
+
+        .nav-links a:hover {
+            color: var(--wine);
+        }
+
+        .nav-links .nav-book {
+            color: white;
+            background: var(--wine);
+            padding: 12px 20px;
+            border-radius: 30px;
+        }
+
+        .nav-links .nav-book:hover {
+            color: white;
+            background: var(--wine-dark);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: 0;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 720px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(255, 250, 251, 0.98) 0%,
+                    rgba(255, 250, 251, 0.91) 48%,
+                    rgba(255, 250, 251, 0.25) 100%
+                ),
+                url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=2000&q=90")
+                center/cover;
+        }
+
+        .hero-content {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        .hero-copy {
+            max-width: 650px;
+        }
+
+        .hero-copy .eyebrow {
+            font-size: 13px;
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(54px, 7vw, 88px);
+            line-height: 1.02;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 em {
+            color: var(--wine);
+            font-weight: 400;
+        }
+
+        .hero-text {
+            max-width: 580px;
+            color: #665b60;
+            font-size: 17px;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .hero-rating {
+            margin-top: 38px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .stars {
+            color: var(--gold);
+            letter-spacing: 3px;
+            font-size: 17px;
+        }
+
+        .rating-info {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .rating-info strong {
+            color: var(--dark);
+        }
+
+
+        /* =========================
+           INTRO STRIP
+        ========================= */
+
+        .intro-strip {
+            background: var(--wine);
+            color: white;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 28px 0;
+        }
+
+        .intro-item {
+            text-align: center;
+            padding: 5px 20px;
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .intro-item:last-child {
+            border-right: none;
+        }
+
+        .intro-item strong {
+            display: block;
+            font-family: "Playfair Display", serif;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 3px;
+        }
+
+        .intro-item span {
+            font-size: 12px;
+            color: #f0dfe5;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image-main {
+            height: 570px;
+            object-fit: cover;
+            width: 88%;
+        }
+
+        .about-image-small {
+            position: absolute;
+            width: 42%;
+            height: 240px;
+            object-fit: cover;
+            right: 0;
+            bottom: -35px;
+            border: 12px solid white;
+        }
+
+        .about-content {
+            padding-right: 20px;
+        }
+
+        .about-content h2 {
+            font-family: "Playfair Display", serif;
+            font-weight: 500;
+            font-size: clamp(40px, 4vw, 58px);
+            line-height: 1.15;
+            margin-bottom: 24px;
+        }
+
+        .about-content p {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin: 25px 0 30px;
+        }
+
+        .about-list li {
+            margin-bottom: 13px;
+            font-size: 14px;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: var(--wine);
+            font-weight: 700;
+            margin-right: 12px;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            background: var(--cream);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 35px 30px;
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 20px 45px rgba(70, 35, 50, 0.08);
+        }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: var(--soft);
+            color: var(--wine);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            font-family: "Playfair Display", serif;
+            font-size: 20px;
+        }
+
+        .service-card h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 27px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .service-note {
+            text-align: center;
+            margin-top: 35px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           GALLERY
+        ========================= */
+
+        .gallery {
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            grid-template-rows: 260px 260px;
+            gap: 12px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-item:first-child {
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            background: rgba(255,255,255,0.92);
+            padding: 8px 14px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+        /* =========================
+           REVIEWS
+        ========================= */
+
+        .reviews {
+            background: var(--soft);
+        }
+
+        .review-summary {
+            text-align: center;
+            margin-top: -20px;
+            margin-bottom: 45px;
+        }
+
+        .review-number {
+            font-family: "Playfair Display", serif;
+            font-size: 62px;
+            line-height: 1;
+            color: var(--dark);
+        }
+
+        .review-count {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .review-card {
+            background: white;
+            padding: 35px;
+            border: 1px solid var(--border);
+        }
+
+        .review-card .stars {
+            margin-bottom: 20px;
+        }
+
+        .review-card blockquote {
+            font-family: "Playfair Display", serif;
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 22px;
+        }
+
+        .review-card cite {
+            font-size: 12px;
+            color: var(--muted);
+            font-style: normal;
+        }
+
+
+        /* =========================
+           BOOKING CTA
+        ========================= */
+
+        .booking {
+            background:
+                linear-gradient(
+                    rgba(99, 56, 73, 0.88),
+                    rgba(99, 56, 73, 0.88)
+                ),
+                url("https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1800&q=90")
+                center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .booking .eyebrow {
+            color: #f0cbd8;
+        }
+
+        .booking h2 {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: clamp(42px, 5vw, 65px);
+            line-height: 1.1;
+            max-width: 750px;
+            margin: 0 auto 20px;
+        }
+
+        .booking p {
+            max-width: 580px;
+            margin: 0 auto 30px;
+            color: #f1e2e7;
+        }
+
+        .booking-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 60px;
+            align-items: stretch;
+        }
+
+        .contact-content h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .contact-content > p {
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+        .contact-detail {
+            margin-bottom: 22px;
+        }
+
+        .contact-detail strong {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--wine);
+            margin-bottom: 5px;
+        }
+
+        .contact-detail p,
+        .contact-detail a {
+            color: #4d4247;
+            font-size: 14px;
+        }
+
+        .contact-detail a:hover {
+            color: var(--wine);
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .map {
+            min-height: 500px;
+            width: 100%;
+            border: 0;
+        }
+
+
+        /* =========================
+           HOURS
+        ========================= */
+
+        .hours-box {
+            margin-top: 30px;
+            border-top: 1px solid var(--border);
+            padding-top: 25px;
+        }
+
+        .hours-box h4 {
+            font-family: "Playfair Display", serif;
+            font-size: 22px;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .hours-box p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #241d21;
+            color: #d8ccd1;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 50px;
+            padding-bottom: 40px;
+        }
+
+        .footer-brand {
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #aa9da2;
+            font-size: 13px;
+        }
+
+        .footer-title {
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-links a {
+            font-size: 13px;
+            color: #aa9da2;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 22px;
+            text-align: center;
+        }
+
+
+        /* =========================
+           FLOATING BUTTONS
+        ========================= */
+
+        .floating-call {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            z-index: 2000;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: var(--wine);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .floating-call:hover {
+            transform: scale(1.08);
+        }
+
+        .floating-whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 2000;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+
+        /* =========================
+           SCROLL REVEAL
+        ========================= */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .topbar {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 82px;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 25px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                border-bottom: 1px solid var(--border);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 13px 5px;
+            }
+
+            .nav-links .nav-book {
+                text-align: center;
+                margin-top: 8px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 70px;
+            }
+
+            .about-image-main {
+                width: 90%;
+            }
+
+            .service-grid,
+            .review-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .nav {
+                height: 72px;
+            }
+
+            .nav-links {
+                top: 72px;
+            }
+
+            .brand {
+                font-size: 22px;
+            }
+
+            .hero {
+                min-height: 700px;
+                background:
+                    linear-gradient(
+                        rgba(255,250,251,0.91),
+                        rgba(255,250,251,0.94)
+                    ),
+                    url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=85")
+                    center/cover;
+            }
+
+            .hero h1 {
+                font-size: 52px;
+            }
+
+            .hero-text {
+                font-size: 15px;
+            }
+
+            .hero-buttons,
+            .booking-buttons,
+            .contact-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-item {
+                border-right: 0;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+                padding: 14px;
+            }
+
+            .intro-item:last-child {
+                border-bottom: 0;
+            }
+
+            .about-image-main {
+                width: 100%;
+                height: 450px;
+            }
+
+            .about-image-small {
+                display: none;
+            }
+
+            .service-grid,
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 220px 220px 220px;
+            }
+
+            .gallery-item:first-child {
+                grid-row: span 2;
+            }
+
+            .gallery-item:nth-child(4) {
+                grid-column: span 2;
+            }
+
+            .map {
+                min-height: 350px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-call,
+            .floating-whatsapp {
+                width: 52px;
+                height: 52px;
+                bottom: 15px;
+            }
+
+            .floating-call {
+                left: 15px;
+            }
+
+            .floating-whatsapp {
+                right: 15px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- TOP BAR -->
+
+    <div class="topbar">
+
+        <div class="container topbar-inner">
+
+            <span>
+                Beauty by Kamaljit · Elm Park · Hornchurch
+            </span>
+
+            <a href="tel:07450239175">
+                07450 239175
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <div class="container nav">
+
+            <a href="#home" class="brand">
+
+                Beauty by Kamaljit
+
+                <small>
+                    Beauty Salon
+                </small>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu">
+
+                ☰
+
+            </button>
+
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#services">Services</a>
+
+                <a href="#gallery">Gallery</a>
+
+                <a href="#reviews">Reviews</a>
+
+                <a href="#contact">Contact</a>
+
+                <a
+                    href="https://www.treatwell.co.uk/place/beauty-by-kamaljit/"
+                    target="_blank"
+                    class="nav-book">
+
+                    Book Online
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-copy reveal">
+
+                    <div class="eyebrow">
+                        Beauty · Care · Confidence
+                    </div>
+
+                    <h1>
+                        Your beauty,<br>
+                        <em>your confidence.</em>
+                    </h1>
+
+                    <p class="hero-text">
+                        Welcome to Beauty by Kamaljit. Enjoy professional
+                        beauty treatments in a friendly and welcoming
+                        environment in Elm Park, Hornchurch.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="https://www.treatwell.co.uk/place/beauty-by-kamaljit/"
+                            target="_blank"
+                            class="btn btn-primary">
+
+                            Book Your Appointment
+
+                        </a>
+
+
+                        <a
+                            href="tel:07450239175"
+                            class="btn btn-outline">
+
+                            Call 07450 239175
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-rating">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <div class="rating-info">
+
+                            <strong>5.0</strong>
+
+                            · 129 reviews
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- INTRO STRIP -->
+
+        <section class="intro-strip">
+
+            <div class="container intro-grid">
+
+                <div class="intro-item">
+
+                    <strong>5.0 ★★★★★</strong>
+
+                    <span>
+                        Customer rating
+                    </span>
+
+                </div>
+
+
+                <div class="intro-item">
+
+                    <strong>129 Reviews</strong>
+
+                    <span>
+                        Customer feedback
+                    </span>
+
+                </div>
+
+
+                <div class="intro-item">
+
+                    <strong>Elm Park</strong>
+
+                    <span>
+                        Hornchurch, RM12 5AB
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT -->
+
+        <section class="section about" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-image reveal">
+
+                    <img
+                        class="about-image-main"
+                        src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1100&q=90"
+                        alt="Beauty salon">
+
+                    <img
+                        class="about-image-small"
+                        src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=90"
+                        alt="Beauty products">
+
+                </div>
+
+
+                <div class="about-content reveal">
+
+                    <div class="eyebrow">
+                        About the salon
+                    </div>
+
+                    <h2>
+                        Beauty care with a personal touch.
+                    </h2>
+
+                    <p>
+                        Beauty by Kamaljit provides professional beauty
+                        services with a focus on customer care,
+                        attention to detail and a welcoming experience.
+                    </p>
+
+                    <p>
+                        Customer feedback highlights professional,
+                        friendly and efficient service, with eyebrow,
+                        waxing and beauty treatments being particularly
+                        popular.
+                    </p>
+
+
+                    <ul class="about-list">
+
+                        <li>
+                            Friendly and welcoming service
+                        </li>
+
+                        <li>
+                            Professional beauty treatments
+                        </li>
+
+                        <li>
+                            Attention to customer requests
+                        </li>
+
+                        <li>
+                            Convenient online booking
+                        </li>
+
+                    </ul>
+
+
+                    <a
+                        href="https://www.treatwell.co.uk/place/beauty-by-kamaljit/"
+                        target="_blank"
+                        class="btn btn-primary">
+
+                        Book an Appointment
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SERVICES -->
+
+        <section class="section services" id="services">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div class="eyebrow">
+                        Our treatments
+                    </div>
+
+                    <h2>
+                        Beauty services designed around you.
+                    </h2>
+
+                    <p>
+                        Choose from a range of beauty treatments
+                        available through Beauty by Kamaljit.
+                    </p>
+
+                </div>
+
+
+                <div class="service-grid">
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Eyebrows
+                        </h3>
+
+                        <p>
+                            Professional eyebrow treatments focused
+                            on creating a neat and defined finish.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Waxing
+                        </h3>
+
+                        <p>
+                            Professional waxing services provided
+                            with care and attention to customer comfort.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Threading
+                        </h3>
+
+                        <p>
+                            Precise threading treatments for a
+                            clean and polished appearance.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            04
+                        </div>
+
+                        <h3>
+                            Eyebrow Waxing
+                        </h3>
+
+                        <p>
+                            Detailed eyebrow waxing for a beautifully
+                            shaped and finished look.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            05
+                        </div>
+
+                        <h3>
+                            Facial Treatments
+                        </h3>
+
+                        <p>
+                            Facial beauty treatments designed to provide
+                            a relaxing and enjoyable experience.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            06
+                        </div>
+
+                        <h3>
+                            Beauty Treatments
+                        </h3>
+
+                        <p>
+                            Beauty services tailored to individual
+                            customer preferences and requirements.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <p class="service-note">
+                    For current treatment availability and booking,
+                    please use the online booking link.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- GALLERY -->
+
+        <section class="section gallery" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div class="eyebrow">
+                        Beauty &amp; care
+                    </div>
+
+                    <h2>
+                        A little glimpse of the experience.
+                    </h2>
+
+                    <p>
+                        Replace these demonstration images with
+                        the salon's own approved photos before
+                        publishing the final website.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=90"
+                            alt="Beauty salon interior">
+
+                        <span class="gallery-caption">
+                            Salon
+                        </span>
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=90"
+                            alt="Beauty treatment">
+
+                        <span class="gallery-caption">
+                            Beauty
+                        </span>
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=90"
+                            alt="Beauty products">
+
+                        <span class="gallery-caption">
+                            Care
+                        </span>
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=90"
+                            alt="Beauty care">
+
+                        <span class="gallery-caption">
+                            Treatments
+                        </span>
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=90"
+                            alt="Beauty products">
+
+                        <span class="gallery-caption">
+                            Beauty
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- REVIEWS -->
+
+        <section class="section reviews" id="reviews">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div class="eyebrow">
+                        Customer feedback
+                    </div>
+
+                    <h2>
+                        Loved by customers.
+                    </h2>
+
+                    <p>
+                        The business information provided shows a
+                        5.0 rating from 129 reviews.
+                    </p>
+
+                </div>
+
+
+                <div class="review-summary">
+
+                    <div class="review-number">
+                        5.0
+                    </div>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="review-count">
+                        129 reviews
+                    </div>
+
+                </div>
+
+
+                <div class="review-grid">
+
+
+                    <article class="review-card reveal">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “Amazing quick, and professional service
+                            and great customer service!”
+                        </blockquote>
+
+                        <cite>
+                            Customer review
+                        </cite>
+
+                    </article>
+
+
+                    <article class="review-card reveal">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “Kam listens to her customers and always
+                            gets their beauty requests spot on!”
+                        </blockquote>
+
+                        <cite>
+                            Customer review
+                        </cite>
+
+                    </article>
+
+
+                    <article class="review-card reveal">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “Great place, a job well done.”
+                        </blockquote>
+
+                        <cite>
+                            Customer review
+                        </cite>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BOOKING -->
+
+        <section class="section booking">
+
+            <div class="container">
+
+                <div class="eyebrow">
+                    Ready for your appointment?
+                </div>
+
+                <h2>
+                    Your next beauty appointment is only a click away.
+                </h2>
+
+                <p>
+                    Check availability and book your appointment
+                    through the online booking service.
+                </p>
+
+
+                <div class="booking-buttons">
+
+                    <a
+                        href="https://www.treatwell.co.uk/place/beauty-by-kamaljit/"
+                        target="_blank"
+                        class="btn btn-white">
+
+                        Book Online
+
+                    </a>
+
+
+                    <a
+                        href="tel:07450239175"
+                        class="btn"
+                        style="border:1px solid white;color:white;">
+
+                        Call 07450 239175
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTACT -->
+
+        <section class="section contact" id="contact">
+
+            <div class="container contact-grid">
+
+
+                <div class="contact-content reveal">
+
+                    <div class="eyebrow">
+                        Visit us
+                    </div>
+
+                    <h2>
+                        Come and see us in Elm Park.
+                    </h2>
+
+                    <p>
+                        Beauty by Kamaljit is located at Twinkle Tips
+                        Nail and Beauty in Elm Park, Hornchurch.
+                    </p>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            Address
+                        </strong>
+
+                        <p>
+                            Twinkle Tips Nail and Beauty<br>
+                            6 Station Parade<br>
+                            Elm Park Ave<br>
+                            Hornchurch<br>
+                            RM12 5AB
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            Phone
+                        </strong>
+
+                        <a href="tel:07450239175">
+                            07450 239175
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            Online booking
+                        </strong>
+
+                        <a
+                            href="https://www.treatwell.co.uk/place/beauty-by-kamaljit/"
+                            target="_blank">
+
+                            Book through Treatwell
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hours-box">
+
+                        <h4>
+                            Opening information
+                        </h4>
+
+                        <p>
+                            Please check the online booking page
+                            for current opening times and availability.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-buttons">
+
+                        <a
+                            href="tel:07450239175"
+                            class="btn btn-primary">
+
+                            Call Now
+
+                        </a>
+
+
+                        <a
+                            href="https://www.treatwell.co.uk/place/beauty-by-kamaljit/"
+                            target="_blank"
+                            class="btn btn-outline">
+
+                            Book Online
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reveal">
+
+                    <iframe
+                        class="map"
+                        src="https://www.google.com/maps?q=Twinkle%20Tips%20Nail%20and%20Beauty%2C%206%20Station%20Parade%2C%20Elm%20Park%20Ave%2C%20Hornchurch%20RM12%205AB&output=embed"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div>
+
+                    <div class="footer-brand">
+                        Beauty by Kamaljit
+                    </div>
+
+                    <p>
+                        Professional beauty services in
+                        Elm Park, Hornchurch.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <div class="footer-title">
+                        Quick Links
+                    </div>
+
+                    <div class="footer-links">
+
+                        <a href="#home">Home</a>
+
+                        <a href="#about">About</a>
+
+                        <a href="#services">Services</a>
+
+                        <a href="#reviews">Reviews</a>
+
+                        <a href="#contact">Contact</a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <div class="footer-title">
+                        Contact
+                    </div>
+
+                    <div class="footer-links">
+
+                        <a href="tel:07450239175">
+                            07450 239175
+                        </a>
+
+                        <a
+                            href="https://www.treatwell.co.uk/place/beauty-by-kamaljit/"
+                            target="_blank">
+
+                            Book Online
+
+                        </a>
+
+                        <a href="#contact">
+                            Hornchurch RM12 5AB
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Beauty by Kamaljit. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- FLOATING CALL -->
+
+    <a
+        href="tel:07450239175"
+        class="floating-call"
+        aria-label="Call Beauty by Kamaljit">
+
+        ☎
+
+    </a>
+
+
+    <!-- FLOATING WHATSAPP -->
+
+    <a
+        href="https://wa.me/447450239175?text=Hello%20Beauty%20by%20Kamaljit%2C%20I%20would%20like%20to%20make%20an%20appointment."
+        target="_blank"
+        class="floating-whatsapp"
+        aria-label="WhatsApp Beauty by Kamaljit">
+
+        WA
+
+    </a>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        /* MOBILE MENU */
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function () {
+
+            navLinks.classList.toggle("active");
+
+        });
+
+
+        /* CLOSE MOBILE MENU AFTER CLICK */
+
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navLinks.classList.remove("active");
+
+            });
+
+        });
+
+
+        /* SCROLL REVEAL */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        const revealObserver =
+            new IntersectionObserver(
+
+                function (entries) {
+
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                            revealObserver.unobserve(entry.target);
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.12
+                }
+
+            );
+
+
+        revealElements.forEach(function (element) {
+
+            revealObserver.observe(element);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
